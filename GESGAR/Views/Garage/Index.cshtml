@@ -1,0 +1,42 @@
+﻿@model GESGAR.Models.Garage
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<link rel="stylesheet" href="~/css/site.css" type="text/css" />
+
+<div>
+    <h3>Garage</h3>
+    <a asp-action="Nouvelle">Nouvelle voiture</a>
+    <dl class="row"></dl>
+    <table class="table">
+        <tr border="1">
+            <th>Id</th>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Couleur</th>
+            <th>Etat</th>
+            <th>Immatriculation</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        @foreach(Voiture voiture in @Model.listVoiture){
+            <tr>
+                <th>@voiture.Id</th>
+                <th>@voiture.Marque</th>
+                <th>@voiture.Modele</th>
+                <th>@voiture.Couleur</th>
+                <th>@voiture.Etat</th>
+                <th>@voiture.Immatriculation</th>
+                <th>@voiture.Annee</th>
+                <th><a asp-controller="Voiture" asp-action="Index">Détails</a></th>
+                <th><a asp-action="Vendre">Vendre</a></th>
+            </tr>
+        }
+
+    </table>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h1>Enregistrement d'un nouvelle voiture</h1>
+
+<form>
+    <div class="form-row">
+    <div class="form-group">
+        <label for="exampleInputPassword1">Marque</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Marque">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword2">Modèle</label>
+        <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Modèle">
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Année</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Année">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Couleur</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Couleur">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enregistrer</button>
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

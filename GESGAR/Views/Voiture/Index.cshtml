@@ -1,0 +1,40 @@
+﻿@model GESGAR.Models.Voiture
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h2>Détails de la voiture</h2>
+
+<div>
+    <hr />
+    <table class="table">
+             <tr>
+                <th>ID</th>
+                <th>@Model.Id</th>
+             </tr>
+             <tr> 
+                <th>Marque</th>
+                <th>@Model.Marque</th>
+             </tr>
+             <tr>
+                <th>Couleur</th>
+                <th>@Model.Couleur</th>
+             </tr>
+             <tr>
+                <th>Etat</th>
+                <th>@Model.Etat</th>
+             </tr>
+             <tr>
+                <th>Immatriculation</th>
+                <th>@Model.Immatriculation</th>
+             </tr>
+             <tr>
+                <th>Annee</th>
+                <th>@Model.Annee</th>
+             </tr>
+    </table>
+</div>
+<div>
+    <a asp-controller="Garage" asp-action="Index">Back to List</a>
+</div>
